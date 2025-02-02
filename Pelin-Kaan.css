@@ -1,5 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-image: url("https://gezilecekyerler-listesi.com/wp-content/uploads/2019/12/zurih-gezilecek-yerler-blog.jpg");
-    background-repeat: repeat-y;
-    }
-  
+  color: white;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  background-color: black;
+  /*background-image: url("https://gezilecekyerler-listesi.com/wp-content/uploads/2019/12/zurih-gezilecek-yerler-blog.jpg");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(4px) opacity(20%);
+
+  /* Ortalama */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Cocuklari siralama */
+  flex-direction: column;
+
+  /* Cocuklarin arasindaki bosluk */
+  gap: 32px;
+}
+
+.name {
+  font-size: 6rem;
+  text-align: 6rem;
+  text-align: middle;
+  font-weight: 700;
+  border: 2px solid blue;
+}
+
+.description {
+  font-size: large;
+}
+
+.family-names {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+}
+
+.info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 400px;
+  font-size: 22px;
+  border: 2px solid green;
+}
+
+.date {
+  text-align: center;
+  border: 2px solid red;
+}
+
+.date-info {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.flex-col {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+}
+
+.divider {
+  height: 2px;
+  width: 100%;
+  background-color: tomato;
+}
+
+.pinyon-script-regular {
+  font-family: "Pinyon Script", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-serif-display {
+  font-family: "Noto Serif Display", serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}
