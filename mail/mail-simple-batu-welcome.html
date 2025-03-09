@@ -20,8 +20,7 @@
         body {
             height: 100%;
             width: 100%;
-            border-radius: 60px;
-            text-align: center;
+            border-radius: 60px;            
             background: #f9f9f9;
             display: flex;
             flex-direction: column;
@@ -39,6 +38,7 @@
             font-size: 24px;
             font-weight: bold;
             margin: 36px;
+            align-self: center;
         }
 
         .teaser {
@@ -49,16 +49,17 @@
             gap: 16px;
             font-size: 16px;
             padding: 32px;
+            text-align: center;
         }
 
         .teaser-title {
             font-size: 24px;
-            font-weight: 300;
+            font-weight: 300;            
         }
 
         .teaser-hint {
             font-size: 14px;
-            font-weight: 300;
+            font-weight: 300;            
         }
 
         .card {
@@ -76,6 +77,7 @@
             color: rgb(0, 0, 0);
             font-size: 15px;
             padding: 24px;
+            align-items: flex-start;
         }
 
         .button {
@@ -89,6 +91,8 @@
             border-radius: 20px;
             font-size: 16px;
             font-weight: bold;
+            align-self: stretch;
+            text-align: center;
         }
 
         .media-icons {
@@ -125,13 +129,23 @@
             color: #777;
             font-size: 12px;
             gap: 16px;
+            text-align: center;
         }
+        .content {
+        display: flex ;
+        flex-direction: column;
+    }  
+        .title {
+        align-self: flex-start;
+        }
+        
+
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div style="display: flex; flex-direction: column;">
+        <div class="content">
             <div class="app-name">athyna.</div>
             <div class="card">
                 <div class="teaser">
@@ -140,7 +154,7 @@
                         minutes.</p>
                 </div>
                 <div class="paragraph-frame">
-                    <h3>The platform for hiring talent globally</h3>
+                    <h3 class="title">The platform for hiring talent globally</h3>
                     <p class="description">
                         Athyna is a global employment platform, whose mission is to help democratize
                         opportunity
