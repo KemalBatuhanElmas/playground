@@ -1,118 +1,185 @@
 <!doctype html>
 <html>
-    <head>
-        <style>
-         .DışÇerçeve {
-            background: #ffffff;
-            border-radius: 60px;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Roboto, sans-serif;
+        }
+
+        html {
+            height: 100%;
             width: 100%;
-            text-align: center;
         }
-        .İçÇerçeve {
-            background: #f9f9f9;
+
+        body {
+            height: 100%;
+            width: 100%;
             border-radius: 60px;
+            text-align: center;
+            background: #f9f9f9;
+            display: flex;
+            flex-direction: column;
             padding: 20px;
         }
-        .AnaBaşlık {
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .app-name {
             font-size: 24px;
             font-weight: bold;
-            margin-bottom: 40px;
-        }      
-        .AnaResim {
-            width: 60%;
-            height: 175px;
-            border-radius: 15px;
+            margin: 36px;
+        }
+
+        .teaser {
+            display: flex;
+            flex-direction: column;
             background: linear-gradient(50deg, #b76df1, #6c63ff, #3ee7a1);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             color: rgb(252, 252, 252);
-            padding: 80px;
-            font-size: 15px
+            gap: 16px;
+            font-size: 16px;
+            padding: 32px;
         }
-        .ParagrafÇerçeve {
-            width: 60%;
-            height: 175px;
+
+        .teaser-title {
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        .teaser-hint {
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .card {
+            background: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
-            background: linear-gradient(50deg, #ffffff, #ffffff, #ffffff);
+            overflow: hidden;
+        }
+
+        .paragraph-frame {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            gap: 16px;
             color: rgb(0, 0, 0);
-            padding: 80px;
             font-size: 15px;
+            padding: 24px;
         }
-        .buton {
+
+        .button {
             display: inline-block;
             background: #857efc;
             color: #ffffff;
-            padding: 5px 180px;
             margin-top: 5px;
+            padding-top: 12px;
+            padding-bottom: 12px;
             text-decoration: none;
             border-radius: 20px;
-            font-size: 10px;
+            font-size: 16px;
             font-weight: bold;
         }
-        .medyaikon {
+
+        .media-icons {
             margin-top: 20px;
             display: flex;
             justify-content: center;
             gap: 15px;
         }
-        .medyaikon a img {
-            width: 25px;
-            height: 25px;
+
+        .media-icons img {
+            width: 16px;
+            height: 16px;
+            color: white;
         }
-        .AltBilgi {
-            margin-top: 50px;
-            font-size: 12px;
-            color: #777;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
+
+        .media-icons a {
+            height: 32px;
+            width: 32px;
+            border-radius: 16px;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 90vh;
+            background-color: #cfcfcf;
         }
-                   
-        </style>
-    </head>
-    <body>
-        <div class="DışÇerçeve">
-            <div class="İçÇerçeve">
-                <div class="AnaBaşlık">athyna.</div>
-                    <div class="AnaResim">
-                    <h2>Welcome to Athyna</h2>
-                    <p>Payroll, benefits, taxes, and sustainability for your global team. In minutes.</p>
-                    </div>
-                <div class="ParagrafÇerçeve">
-                    <h3>The platform for hiring talent globally</h3>
-                    <p class="description">Athyna is a global employment platform, whose mission is to help democratize opportunity across the globe. We do this by creating a sutainable ecosystem of talent,and tools in order to bridge the gap between companies and job seekers.</p>
-                    <a href="#" class="buton">Learn More</a>
-                    </div>
-            <div class="medyaikon">
-                <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-06-512.png" alt="YouTube"></a>
-                <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/metro-uinvert-dock/256/Linked_in_alt.png" alt="LinkedIn"></a>
-                <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-02-512.png" alt="Facebook"></a>
-                <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png" alt="Github"></a>
-                <a href="#"><img src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Instagram-512.png" alt="Instagram"></a>
-                
-                    </div>    
-            <div class="AltBilgi">
-                <p>You elected to receive notification emails.</p>
-                <p>No longer interested? <a href="#">Unsubscribe</a> or <a href="#">manage your subscriptions</a>.</p>
-                <p>Athyna • Melbourne, Victoria 3000, AU</p>
+
+        .media-icons a:hover {
+            background-color: #c0c0c0;
+        }
+
+        .footer {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            color: #777;
+            font-size: 12px;
+            gap: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div style="display: flex; flex-direction: column;">
+            <div class="app-name">athyna.</div>
+            <div class="card">
+                <div class="teaser">
+                    <h2 class="teaser-title">Welcome to Athyna</h2>
+                    <p class="teaser-hint">Payroll, benefits, taxes, and sustainability for your global team. In
+                        minutes.</p>
                 </div>
-            </div>            
+                <div class="paragraph-frame">
+                    <h3>The platform for hiring talent globally</h3>
+                    <p class="description">
+                        Athyna is a global employment platform, whose mission is to help democratize
+                        opportunity
+                        across the globe. We do this by creating a sutainable ecosystem of talent,and tools in order to
+                        bridge the gap
+                        between companies and job seekers.
+                    </p>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+            </div>
         </div>
-    </body>
+
+        <div class="footer">
+            <div class="media-icons">
+                <a href="#">
+                    <img src="./assets/youtube.svg" alt="YouTube">
+                </a>
+                <a href="#">
+                    <img src="./assets/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="#">
+                    <img src="./assets/github.svg" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img src="./assets/discord.svg" alt="Github">
+                </a>
+            </div>
+            <div>
+                <p>You elected to receive notification emails.</p>
+                <p>No longer interested? <a href="#">Unsubscribe</a> or <a href="#">manage your subscriptions</a>.
+                </p>
+            </div>
+
+            <div>
+                <p>Athyna • Melbourne, Victoria 3000, AU</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
 </html>
