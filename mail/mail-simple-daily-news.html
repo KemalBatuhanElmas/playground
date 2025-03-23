@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Off Request</title>
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .content {
+        display: flex ;
+        flex-direction: column;
+        }  
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+            .app-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 36px;
+            align-self: center;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 32px;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+            position: relative;
+                    }
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(to right, #ff8c00, #ff00ff);
+        }
+        .header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .profile-info {
+            font-size: 14px;
+        }
+        .time-off-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            margin-bottom: 15px;
+        }
+        .time-off {
+            background: #e0e0e0;
+            padding: 10px;
+            border-radius: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .time-off:first-child {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .time-off:last-child {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        .time-off span {
+            display: inline-block;
+            font-size: 14px;
+            color: #555;
+        }
+        .time-off div {
+            display: flex;
+            flex-direction: column;
+        }
+        .time-off div span {
+            font-size: 14px;
+            color: #555;
+        }
+        .comment-section {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .comment-header {
+            font-weight: normal;
+            font-size: 9px;
+            color: #aaa;
+            font-family: 'Verdana', sans-serif;
+            margin-bottom: 5px;
+        }
+        .comment {
+            font-size: 14px;
+            color: black; 
+            max-width: 100%;
+            text-align:center;      
+        }
+        .details-button {
+            display: block;
+            background: #8000ff;
+            color: white;
+            margin-top: 5px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            align-self: stretch;
+            text-align: center;
+        }
+        .media-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .media-icons img {
+            width: 16px;
+            height: 16px;
+            color: white;
+        }
+
+        .media-icons a {
+            height: 32px;
+            width: 32px;
+            border-radius: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #cfcfcf;
+        }
+
+        .media-icons a:hover {
+            background-color: #c0c0c0;
+        }
+        .footer {
+            margin-top: 24px;
+            display: flex;
+            flex-direction: column;
+            color: #777;
+            font-size: 12px;
+            gap: 16px;
+            text-align: center;
+        }
+        .arrow {
+            font-size: 28px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="app-name">athyna.</div>
+            <div class="card">
+                <div class="time-off-container">
+                    <div class="header">New Time-Off Request Received from Dmitry Trostin</div>
+            <div class="profile">
+            <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Profile Picture">
+            <div class="profile-info">
+                <div>Dmitry Trostin</div>
+                <div>Russia 🇷🇺</div>
+            </div>
+            </div>
+                    <div class="time-off">
+                        <span>🟣 Vacation</span>
+                        <span>5 Days</span>
+                    </div>
+                    <div class="time-off">
+                        <div>
+                            <span>31 Jan 2022</span>
+                            <span>Monday</span>
+                        </div>
+                        <span class="arrow">→</span>
+                        <div>
+                            <span>4 Feb 2022</span>
+                            <span>Friday</span>
+                        </div>
+                    </div>
+             </div>
+        </div>
+        </div>
+        <div class="comment-section">
+            <div class="comment-header">COMMENTS</div>
+            <div class="comment">Spending a quality time with family in Miami for a week.</div>
+        </div>
+        <a href="#" class="details-button">See Details</a>
+        <div class="footer">
+            <div class="media-icons">
+                <a href="#">
+                    <img src="./assets/youtube.svg" alt="YouTube">
+                </a>
+                <a href="#">
+                    <img src="./assets/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="#">
+                    <img src="./assets/github.svg" alt="GitHub">
+                </a>
+                <a href="#">
+                    <img src="./assets/discord.svg" alt="Discord">
+                </a>
+            </div>
+            <div>
+                <p>You elected to receive notification emails.</p>
+                <p>No longer interested? <a href="#">Unsubscribe</a> or <a href="#">manage your subscriptions</a>.
+                </p>
+            </div>
+    
+            <div>
+                <p>Athyna • Melbourne, Victoria 3000, AU</p>
+            </div>
+        </div>  
+    </div>
+     </body>
+</html>
