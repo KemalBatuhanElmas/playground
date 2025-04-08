@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,14 @@
             height: 100%;
             width: 100%;
         }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
@@ -22,23 +25,30 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            padding-left: 32px;
+            padding-right: 32px;
         }
+
         .content {
-        display: flex ;
-        flex-direction: column;
-        }  
+            display: flex;
+            flex-direction: column;
+
+        }
+
         .container {
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
-            .app-name {
+
+        .app-name {
             font-size: 24px;
             font-weight: bold;
             margin: 36px;
             align-self: center;
         }
+
         .card {
             display: flex;
             flex-direction: column;
@@ -50,7 +60,8 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             max-width: 100%;
             position: relative;
-                    }
+        }
+
         .card::before {
             content: "";
             position: absolute;
@@ -60,31 +71,37 @@
             height: 5px;
             background: linear-gradient(to right, #ff8c00, #ff00ff);
         }
+
         .header {
             font-size: 18px;
             font-weight: bold;
             margin-bottom: 10px;
         }
+
         .profile {
             display: flex;
             align-items: center;
             gap: 10px;
             margin-bottom: 15px;
         }
+
         .profile img {
             width: 40px;
             height: 40px;
             border-radius: 50%;
         }
+
         .profile-info {
             font-size: 14px;
         }
+
         .time-off-container {
             display: flex;
             flex-direction: column;
             gap: 2px;
             margin-bottom: 15px;
         }
+
         .time-off {
             background: #e0e0e0;
             padding: 10px;
@@ -92,31 +109,38 @@
             display: flex;
             justify-content: space-between;
         }
+
         .time-off:first-child {
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
         }
+
         .time-off:last-child {
             border-bottom-left-radius: 8px;
             border-bottom-right-radius: 8px;
         }
+
         .time-off span {
             display: inline-block;
             font-size: 14px;
             color: #555;
         }
+
         .time-off div {
             display: flex;
             flex-direction: column;
         }
+
         .time-off div span {
             font-size: 14px;
             color: #555;
         }
+
         .comment-section {
             margin-top: 15px;
             margin-bottom: 15px;
         }
+
         .comment-header {
             font-weight: normal;
             font-size: 9px;
@@ -124,12 +148,14 @@
             font-family: 'Verdana', sans-serif;
             margin-bottom: 5px;
         }
+
         .comment {
             font-size: 14px;
-            color: black; 
+            color: black;
             max-width: 100%;
-            text-align:center;      
+            text-align: center;
         }
+
         .details-button {
             display: block;
             background: #8000ff;
@@ -144,6 +170,7 @@
             align-self: stretch;
             text-align: center;
         }
+
         .media-icons {
             margin-top: 20px;
             display: flex;
@@ -170,6 +197,7 @@
         .media-icons a:hover {
             background-color: #c0c0c0;
         }
+
         .footer {
             margin-top: 24px;
             display: flex;
@@ -179,6 +207,7 @@
             gap: 16px;
             text-align: center;
         }
+
         .arrow {
             font-size: 28px;
             font-weight: bold;
@@ -186,6 +215,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="content">
@@ -193,13 +223,13 @@
             <div class="card">
                 <div class="time-off-container">
                     <div class="header">New Time-Off Request Received from Dmitry Trostin</div>
-            <div class="profile">
-            <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Profile Picture">
-            <div class="profile-info">
-                <div>Dmitry Trostin</div>
-                <div>Russia 🇷🇺</div>
-            </div>
-            </div>
+                    <div class="profile">
+                        <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Profile Picture">
+                        <div class="profile-info">
+                            <div>Dmitry Trostin</div>
+                            <div>Russia 🇷🇺</div>
+                        </div>
+                    </div>
                     <div class="time-off">
                         <span>🟣 Vacation</span>
                         <span>5 Days</span>
@@ -215,8 +245,8 @@
                             <span>Friday</span>
                         </div>
                     </div>
-             </div>
-        </div>
+                </div>
+            </div>
         </div>
         <div class="comment-section">
             <div class="comment-header">COMMENTS</div>
@@ -243,11 +273,12 @@
                 <p>No longer interested? <a href="#">Unsubscribe</a> or <a href="#">manage your subscriptions</a>.
                 </p>
             </div>
-    
+
             <div>
                 <p>Athyna • Melbourne, Victoria 3000, AU</p>
             </div>
-        </div>  
+        </div>
     </div>
-     </body>
+</body>
+
 </html>
