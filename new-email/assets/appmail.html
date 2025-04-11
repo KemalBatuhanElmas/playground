@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Startup 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 590px;
+      width: 100%;
+    }
+
+    .box-1, .box-2, .footer {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 8px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    }
+
+    .badge {
+      background: linear-gradient(to bottom, #8e2de2, #4a00e0);
+      color: white;
+      border-radius: 50%;
+      display: inline-block;
+      padding: 12px 18px;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .box-1 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+    }
+
+    .box-1 h1 {
+     font-size: 28px;
+     font-weight: 700;
+     margin-bottom: 20px;
+    }
+
+    .image-section {
+     text-align: center;
+     margin-bottom: 20px;
+     background-color: #ccc;
+     width: 90%;
+     height: 300px;
+     border-radius: 8px;
+     position: relative;
+    }
+
+    .image-section img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     border-radius: 6px;
+    }
+
+    .description {
+     text-align: left;
+     font-size: 16px;
+     line-height: 1.5;
+     margin-top: 20px;
+     padding-left: 10px;
+     padding-right: -10px;
+     max-width: 650px;
+     position: relative;
+     color: #919191;
+     }
+
+    .description strong {
+      font-weight: 600;
+      color: #000;
+    }
+
+    .cta-button {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      background-color: #00d1b2;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 20px;
+    }
+    
+    .box-2 h2 {
+      margin-top: 10px;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+
+    .box-2 p {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: left;
+      margin-bottom: 30px;
+      color: #919191;
+    }
+
+    .box-2 p strong {
+      color: #000;
+    }
+
+    .features-icons {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .icon-box {
+      width: 100px;
+      text-align:left;
+      color: #919191;
+    }
+
+    .icon-box img {
+      width: 40px;
+      margin-bottom: 10px;
+      filter: invert(31%) sepia(90%) saturate(2000%) hue-rotate(230deg) brightness(100%) contrast(101%);
+    }
+
+    .icon-box div.title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 6px;
+    }
+
+    .icon-box div.desc {
+      font-size: 14px;
+      line-height: 1.8;
+      width: 120px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .social-icons {
+      margin-bottom: 10px;
+    }
+
+    .social-icons img {
+      width: 20px;
+      margin: 0 6px;
+      opacity: 0.7;
+    }
+
+    .footer-text a {
+      color: #666;
+      text-decoration: underline;
+      margin: 0 4px;
+    }
+
+    @media (max-width: 480px) {
+      .icon-box {
+        width: 80px;
+      }
+    }
+    .p strong {
+    color: #007bff;  
+    }
+    .center-text {
+    display: block;           
+    text-align: center;       
+    }
+    .box-2 .features-icons {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 80px; 
+    flex-wrap: wrap; 
+    align-items: flex-start; 
+    }
+    .box-2 .icon-box {
+    text-align: left; 
+    width: 120px; 
+    }
+    .box-2 .icon-box div.desc {
+    font-size: 14px;  
+    line-height: 1.6; 
+    width: 150px; 
+    }
+    .box-2 p strong {
+    color: #905bf3; 
+    }
+    .box-1, .box-2 {
+    margin-left: auto;
+    margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <div class="box-1">
+      <div class="badge">3</div>
+      <h1>Startup 3 is Here!</h1>
+      <div class="image-section">
+        
+      </div>
+      <p class="description">
+        Designmodo releases a new online <strong>Bootstrap builder</strong> that comes <span class="center-text">with predesigned elements and templates.</span>
+      <a href="#" class="cta-button">Explore New Presentation</a>
+    </div>
+
+    
+    <div class="box-2">
+      <h2>Features</h2>
+      <p>
+        With Startup, you'll receive the best <strong>Bootstrap builder</strong> with a collection of templates and styles. 
+        All you have to do is to pick the elements you like best and combine them; 
+        we guarantee that it will look fantastic.
+      </p>
+      <div class="features-icons">
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/50/html-5.png" alt="HTML Icon">
+          <div class="title">Clean Code</div>
+          <div class="desc">Export clean and clear HTML, CSS, and JavaScript codes.</div>
+        </div>
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/50/bootstrap.png" alt="Bootstrap Icon">
+          <div class="title">Bootstrap 4</div>
+          <div class="desc">Based on one of the most common and reliable frameworks.</div>
+        </div>
+        <div class="icon-box">
+          <img src="https://img.icons8.com/ios-filled/50/figma.png" alt="Figma Icon">
+          <div class="title">Figma Sources</div>
+          <div class="desc">All components are created with care in Figma.</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="social-icons">
+        <img src="https://img.icons8.com/ios-filled/50/facebook--v1.png" alt="Facebook">
+        <img src="https://img.icons8.com/ios-filled/50/twitter--v1.png" alt="Twitter">
+        <img src="https://img.icons8.com/ios-filled/50/medium-logo.png" alt="Medium">
+        <img src="https://img.icons8.com/ios-filled/50/telegram-app.png" alt="Telegram">
+      </div>
+      <p class="footer-text">
+        Made by Designmodo Team.<br>
+        Email created with Postcards Email Builder.<br>
+        <a href="#">Unsubscribe</a> • <a href="#">Manage Preferences</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
