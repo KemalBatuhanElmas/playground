@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shutterstock Plugin Email</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      position: relative; 
+    }  
+
+    .hero {
+      text-align: center;
+      background: linear-gradient(135deg, #5a1eff, #e11cff);
+      color: white;
+      padding-bottom: 150px; 
+    }
+
+    .hero img.logo {
+      width: 300px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+
+    .hero h2 {
+      text-align: center;
+      font-size: 100px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 .subline {
+      font-size: inherit;
+      font-weight: inherit;
+      color: inherit;
+    }
+
+    .hero p {
+      font-size: 25px;
+      font-weight: bold;
+      line-height: 1.5;
+      margin: 20px 0 20px;
+      max-width: 1400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero button {
+      background-color: #ddd;
+      border: none;
+      padding: 10px 20px;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 180px;
+    }
+
+    .computer {
+      position: absolute;
+      margin-top: 100px; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
+    }
+
+    .features {
+      text-align: center;
+      padding-top: 200px; 
+    }
+
+    .features h3 {
+      padding-top: 300px;
+      padding-bottom: 0px;
+      font-size: 80px;
+      font-weight: bold;
+      color: #222;
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.4;
+    }
+
+    .features h3 .subline {
+      display: block;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px 60px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .feature {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .feature img {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 4px;
+    }
+
+    .feature h4 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .feature p {
+      font-size: 14px;
+      color: #555;
+      margin: 0;
+    }
+
+    .download-btn {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .download-btn a {
+      background-color: #d00;
+      color: white;
+      text-decoration: none;
+      padding: 12px 30px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+      }
+
+      .features h3 {
+        font-size: 42px;
+      }
+
+      .computer {
+        width: 250px;
+        top: 550px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img class="logo" src="https://logos-download.com/wp-content/uploads/2016/06/Shutterstock_logo_gray.png" alt="Shutterstock Logo" />
+    <h2>
+      Download our free plugin for the<br/>
+      <span class="subline">Sketch application</span>
+    </h2>
+    <p>
+      Completing your digital projects just got faster. Access<br/>
+      Shutterstock’s stunning images without leaving your workspace.
+    </p>
+    <button>Get Free Plugin</button>
+  </div>
+
+  <!-- ORTADAKİ GÖRSEL -->
+  <img class="computer" src="https://cdn.pixabay.com/photo/2012/04/13/17/00/lcd-32872_1280.png" alt="computer screen"/>
+
+  <div class="features">
+    <h3>
+      Design smarter with the new Shutterstock<br/>
+      <span class="subline">plugin for the Sketch application.</span>
+    </h3>
+    <div class="features-grid">
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/search--v1.png" alt="Search Icon"/>
+        <h4>Search</h4>
+        <p>Find the perfect content without leaving the application</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/ok--v1.png" alt="Preview Icon"/>
+        <h4>Preview</h4>
+        <p>Use our watermarked content in your layouts for free</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/download--v1.png" alt="License Icon"/>
+        <h4>License</h4>
+        <p>Love it? License the content to instantly update your designs</p>
+      </div>
+      <div class="feature">
+        <img src="https://img.icons8.com/ios-filled/50/folder-invoices.png" alt="Explore Icon"/>
+        <h4>Explore</h4>
+        <p>Get inspired by our exclusive, curated Collections</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="download-btn">
+    <a href="#">Download Now</a>
+  </div>
+</body>
+</html>
