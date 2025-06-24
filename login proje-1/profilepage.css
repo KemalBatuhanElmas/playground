@@ -1,0 +1,220 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #e6e9ee;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #005c63;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.logo {
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 120px;   
+  height: auto;
+  display: block;
+  filter: brightness(0) invert(1); 
+}
+
+.menu a {
+  display: flex;
+  align-items: center; 
+  gap: 12px; 
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+
+.menu a:hover,
+.menu a.active {
+  background-color: #68cdd2;
+  color: #00393d;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+}
+
+.icon-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border: 1.5px solid #005c63; 
+  border-radius: 50%;
+}
+
+.content-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #005c63;
+}
+
+.header {
+  height: 70px;
+  background-color: #005c63;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search {
+  padding: 8px 12px 8px 35px;
+  border-radius: 10px;
+  border: none;
+  width: 250px;
+  background-image: url('https://st2.depositphotos.com/15813590/44325/v/1600/depositphotos_443250410-stock-illustration-simple-magnifying-glass-icon-logo.jpg');
+  background-size: 25px 25px; 
+  background-repeat: no-repeat;
+  background-position: 10px
+  
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 100px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.content {
+  flex: 1;
+  background-color: white;
+  border-radius: 20px;
+  }
+
+ @media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;  /* burada satır değil sütun */
+    /* overflow-x: auto;  bu kaldırılabilir */
+  }
+
+  .sidebar .logo {
+    margin-bottom: 20px; /* biraz alt boşluk */
+    margin-right: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .sidebar .menu {
+    display: flex;
+    flex-direction: column; /* menü linkleri alt alta */
+    gap: 10px;
+    /* overflow-x: auto; kaldırıldı */
+    flex-wrap: nowrap;
+  }
+
+  .sidebar .menu a {
+    padding: 10px 12px;
+    font-size: 14px;
+    white-space: normal; /* satır sonu olabilir */
+  }
+
+  .menu-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .content-area {
+    flex: 1;
+    background-color: #005c63;
+    height: auto;
+  }
+
+  .header {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .right-section {
+    gap: 10px;
+  }
+
+  .search {
+    width: 100%;
+    max-width: 300px;
+    padding-left: 35px;
+  }
+
+  .icons {
+    margin-right: 0;
+    gap: 10px;
+  }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+  }
+}
