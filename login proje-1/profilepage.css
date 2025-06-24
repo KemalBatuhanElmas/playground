@@ -1,11 +1,12 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body, html, #root {
+body,
+html,
+#root {
   height: 100%;
   font-family: sans-serif;
   background-color: #e6e9ee;
@@ -32,16 +33,16 @@ body, html, #root {
 }
 
 .logo img {
-  width: 120px;   
+  width: 120px;
   height: auto;
   display: block;
-  filter: brightness(0) invert(1); 
+  filter: brightness(0) invert(1);
 }
 
 .menu a {
   display: flex;
-  align-items: center; 
-  gap: 12px; 
+  align-items: center;
+  gap: 12px;
   padding: 10px;
   color: white;
   text-decoration: none;
@@ -49,7 +50,6 @@ body, html, #root {
   margin-bottom: 10px;
   font-size: 12px;
 }
-
 
 .menu a:hover,
 .menu a.active {
@@ -80,7 +80,7 @@ body, html, #root {
   width: 8px;
   height: 8px;
   background-color: red;
-  border: 1.5px solid #005c63; 
+  border: 1.5px solid #005c63;
   border-radius: 50%;
 }
 
@@ -112,11 +112,10 @@ body, html, #root {
   border-radius: 10px;
   border: none;
   width: 250px;
-  background-image: url('https://st2.depositphotos.com/15813590/44325/v/1600/depositphotos_443250410-stock-illustration-simple-magnifying-glass-icon-logo.jpg');
-  background-size: 25px 25px; 
+  background-image: url("https://st2.depositphotos.com/15813590/44325/v/1600/depositphotos_443250410-stock-illustration-simple-magnifying-glass-icon-logo.jpg");
+  background-size: 25px 25px;
   background-repeat: no-repeat;
-  background-position: 10px
-  
+  background-position: 10px;
 }
 
 .icons {
@@ -142,10 +141,11 @@ body, html, #root {
 .content {
   flex: 1;
   background-color: white;
-  border-radius: 20px;
-  }
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
   .main {
     flex-direction: column;
     height: auto;
@@ -156,7 +156,7 @@ body, html, #root {
     height: auto;
     padding: 10px 15px;
     display: flex;
-    flex-direction: column;  /* burada satır değil sütun */
+    flex-direction: column; /* burada satır değil sütun */
     /* overflow-x: auto;  bu kaldırılabilir */
   }
 
