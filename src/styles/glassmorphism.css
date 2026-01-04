@@ -82,6 +82,71 @@
   cursor: not-allowed;
 }
 
+/* Glass button - Secondary */
+.glass-button-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.glass-button-secondary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+.glass-button-secondary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.glass-button-secondary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Glass button - Outline */
+.glass-button-outline {
+  background: transparent;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.glass-button-outline:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+}
+
+.glass-button-outline:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.glass-button-outline:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 /* Social login buttons */
 .social-button {
   background: rgba(255, 255, 255, 0.1);

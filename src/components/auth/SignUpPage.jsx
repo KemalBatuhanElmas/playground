@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import { useFormValidation, validateName, validateEmail, validatePassword, validateConfirmPassword } from '../../utils/validation';
 import GlassCard from '../ui/GlassCard';
 import Input from '../ui/Input';
@@ -5,7 +6,8 @@ import Button from '../ui/Button';
 import SocialLoginButtons from './SocialLoginButtons';
 import '../../styles/auth.css';
 
-function SignUpPage({ onNavigate }) {
+function SignUpPage() {
+  const navigate = useNavigate();
   const { values, errors, touched, handleChange, handleBlur, validateAll } = useFormValidation(
     { name: '', email: '', password: '', confirmPassword: '' },
     {
@@ -109,7 +111,7 @@ function SignUpPage({ onNavigate }) {
           Zaten hesabınız var mı?{' '}
           <button
             className="link-button"
-            onClick={() => onNavigate('login')}
+            onClick={() => navigate('/login')}
           >
             Giriş yapın
           </button>

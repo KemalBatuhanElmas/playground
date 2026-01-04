@@ -1,11 +1,13 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useFormValidation, validateEmail } from '../../utils/validation';
 import GlassCard from '../ui/GlassCard';
 import Input from '../ui/Input';
 import Button from '../ui/Button';
 import '../../styles/auth.css';
 
-function ForgotPasswordPage({ onNavigate }) {
+function ForgotPasswordPage() {
+  const navigate = useNavigate();
   const [submitted, setSubmitted] = useState(false);
   const { values, errors, touched, handleChange, handleBlur, validateAll } = useFormValidation(
     { email: '' },
@@ -58,7 +60,7 @@ function ForgotPasswordPage({ onNavigate }) {
         <div className="back-link">
           <button
             className="link-button"
-            onClick={() => onNavigate('login')}
+            onClick={() => navigate('/login')}
           >
             ← Giriş sayfasına dön
           </button>

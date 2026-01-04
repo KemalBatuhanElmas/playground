@@ -1,9 +1,12 @@
+import { useNavigate } from 'react-router-dom';
 import GlassCard from '../ui/GlassCard';
 import LoginForm from './LoginForm';
 import SocialLoginButtons from './SocialLoginButtons';
 import '../../styles/auth.css';
 
-function LoginPage({ onNavigate }) {
+function LoginPage() {
+  const navigate = useNavigate();
+
   const handleLogin = (formData) => {
     console.log('Login attempt:', formData);
   };
@@ -19,7 +22,7 @@ function LoginPage({ onNavigate }) {
         <div className="forgot-password">
           <button
             className="link-button"
-            onClick={() => onNavigate('forgot-password')}
+            onClick={() => navigate('/forgot-password')}
           >
             Şifrenizi mi unuttunuz?
           </button>
@@ -33,7 +36,7 @@ function LoginPage({ onNavigate }) {
           Hesabınız yok mu?{' '}
           <button
             className="link-button"
-            onClick={() => onNavigate('signup')}
+            onClick={() => navigate('/signup')}
           >
             Kayıt olun
           </button>
